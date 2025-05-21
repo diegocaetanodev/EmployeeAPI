@@ -1,0 +1,18 @@
+CREATE DATABASE EmployeeDB;
+GO
+
+USE EmployeeDB;
+GO
+
+CREATE TABLE Employee (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100) NOT NULL
+);
+GO
+
+INSERT INTO Employee (Name) VALUES ('Alice Johnson');
+INSERT INTO Employee (Name) VALUES ('Bruno Silva');
+INSERT INTO Employee (Name) VALUES ('Carla Mendes');
+INSERT INTO Employee (Name) VALUES ('David Lee');
+INSERT INTO Employee (Name) VALUES ('Eva Schmidt');
+GO
